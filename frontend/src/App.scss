@@ -1,0 +1,134 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 40vh;
+  background-image: url('/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
+    a {
+      display: block;
+      color: lavender;
+      border: 1px solid lavender;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}
+
+section.gallery {
+  margin: 0 auto;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 30vw 30vw;
+  justify-content: center;
+}
+
+article.blog-cards {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lavender;
+    height: 350px;
+
+    div.img-wrapper {
+      height: 75%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    div.text {
+      padding: 15px;
+      h2 {
+        color: lavender;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        color: lavender;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+section.adminpage {
+  height: 100vh;
+  background-image: url('himmel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  div.link-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+    a {
+      display: block;
+      color: lavender;
+      border: 1px solid lavender;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 0 70px;
+  }
+
+  section.form {
+    padding: 70px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      margin: 20px 0;
+
+      input {
+        display: block;
+        padding: 2px;
+        margin: 10px 0;
+      }
+    }
+
+    input#button {
+      padding: 2px 8px;
+    }
+  }
+}
